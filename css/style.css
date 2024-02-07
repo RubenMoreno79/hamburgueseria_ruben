@@ -285,6 +285,58 @@ main .grid article {
 
 /*final our service*/
 
+/*inicio about us*/
+
+#aboutus {
+    margin-bottom: 12.5rem;
+}
+
+section#aboutus .flex {
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--margingrid);
+
+    & h3 {
+        font-weight: 700;
+        font-size: 120%;
+    }
+
+    & h4 {
+        color: var(--colorprincipal);
+        font-size: 110%;
+        margin: var(--margingrid) 0;
+    }
+
+    & p {
+        color: #666;
+        line-height: 1.20;
+    }
+
+    section#aboutus .imagen {
+        border: 3px solid var(--colorprincipal);
+        transform: rotateZ(10deg);
+        width: 95%;
+        transition: 1s;
+
+    }
+
+    section#aboutus .imagen .marco {
+        transform: rotateZ(-10deg);
+        transition: 1s;
+
+    }
+
+    section#aboutus figure:hover :is(.imagen, .marco) {
+        transform: rotateZ(0deg);
+    }
+
+}
+
+
+
+/*final about us*/
+
 
 /*inicio mequeries*/
 
@@ -302,41 +354,47 @@ main .grid article {
         border-bottom: 0;
         border-left: 1px solid #aaa;
     }
-}
 
-@media(min-width: 48rem) {
-    header .nav-top .container {
-        justify-content: space-between;
+    section#aboutus .flex {
+        flex-direction: row;
 
-        & span {
-            display: inline;
+    }
+
+    @media(min-width: 48rem) {
+        header .nav-top .container {
+            justify-content: space-between;
+
+            & span {
+                display: inline;
+            }
+
+            & a {
+                color: white;
+                text-decoration: none;
+                font-size: 110%;
+            }
+
         }
 
-        & a {
-            color: white;
-            text-decoration: none;
-            font-size: 110%;
+        footer {
+            text-align: left;
         }
 
+        main .grid {
+            display: grid;
+            gap: var(--margingrid);
+            grid-template-columns: 1fr;
+        }
+
+        main .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        main .grid article:last-child {
+            grid-column: auto;
+        }
     }
 
-    footer {
-        text-align: left;
-    }
-
-    main .grid {
-        display: grid;
-        gap: var(--margingrid);
-        grid-template-columns: 1fr;
-    }
-
-    main .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    main .grid article:last-child {
-        grid-column: auto;
-    }
 }
 
 @media(min-width: 62.75rem) {
