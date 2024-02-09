@@ -337,6 +337,10 @@ section#aboutus figure:hover :is(.imagen, .marco) {
 
 /*inicio main*/
 
+.todaymenu h2 {
+    color: white;
+}
+
 .todaymenu {
     background-color: #21242e;
 }
@@ -375,9 +379,30 @@ section#aboutus figure:hover :is(.imagen, .marco) {
     line-height: 1.25;
 }
 
+.carta {
+    margin-top: 2rem;
+    margin-left: 2rem;
 
+    & div span {
+        color: var(--colorprincipal);
+        margin-left: 1.25rem;
+    }
 
+    & p {
+        margin-bottom: 1.25rem;
+    }
+}
 
+.carta a {
+    color: var(--colorprincipal);
+    font-family: var(--fuenteprincipal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.carta figure {
+    margin-top: 1.25rem;
+}
 
 /* fin main*/
 
