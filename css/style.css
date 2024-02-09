@@ -370,8 +370,9 @@ section#aboutus figure:hover :is(.imagen, .marco) {
 .todaymenu div p {
     font-family: var(--fontsize);
     color: white;
-    font-size: 0.625rem;
+    font-size: 1rem;
     margin-top: 1rem;
+    line-height: 1.25;
 }
 
 
