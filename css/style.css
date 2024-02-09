@@ -479,6 +479,23 @@ section#aboutus figure:hover :is(.imagen, .marco) {
         border: 0px;
         padding: 1.25rem 0rem 1.25rem 2.5rem;
     }
+
+    .desayunos .carta {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .desayunos {
+        width: 25%;
+    }
+
+    .carta {
+        width: 75%;
+    }
+
+
+
+
 }
 
 /* fin mequeries */
