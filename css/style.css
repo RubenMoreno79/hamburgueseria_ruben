@@ -337,6 +337,10 @@ section#aboutus figure:hover :is(.imagen, .marco) {
 
 /*inicio main*/
 
+
+
+/*inicio todaymenu*/
+
 .todaymenu h2 {
     color: white;
 }
@@ -401,6 +405,78 @@ section.todaymenu {
 .carta figure {
     margin-top: 1.25rem;
 }
+
+
+/* fin today menu*/
+
+/*inicio retaurantes*/
+
+
+.section.ourblog {
+
+    background-color: white;
+}
+
+.container {
+    max-width: var(--anchomaximo);
+}
+
+
+.container .restaurantes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+    margin-top: 1.25rem;
+
+    & h3 {
+        font-size: 1.375rem;
+        font-weight: bold;
+        margin: 0.625rem 0rem 0.625rem 0rem;
+    }
+
+    & a {
+        text-decoration: none;
+        color: var(--colorprincipal);
+        font-family: var(--fuenteprincipal);
+        font-weight: 700;
+    }
+
+    & h4 {
+
+        color: var(--colorprincipal);
+        font-weight: 700;
+    }
+
+    & p {
+        line-height: 1.45;
+        margin: 0.625rem 0rem 0.625rem 0rem;
+
+    }
+
+    & .item1 figure img {
+        position: relative;
+    }
+
+    &.item1 div:nth-child(2) {
+        position: absolute;
+    }
+}
+
+
+
+
+
+
+
+/*fin restaurantes*/
+
+
+
+
+
+
+
+
 
 /* fin main*/
 
