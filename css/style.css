@@ -341,7 +341,7 @@ section#aboutus figure:hover :is(.imagen, .marco) {
     color: white;
 }
 
-.todaymenu {
+section.todaymenu {
     background-color: #21242e;
 }
 
@@ -380,8 +380,6 @@ section#aboutus figure:hover :is(.imagen, .marco) {
 }
 
 .carta {
-    margin-top: 2rem;
-    margin-left: 2rem;
 
     & div span {
         color: var(--colorprincipal);
@@ -480,22 +478,41 @@ section#aboutus figure:hover :is(.imagen, .marco) {
         padding: 1.25rem 0rem 1.25rem 2.5rem;
     }
 
-    .desayunos .carta {
+    .todaymenu .container {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
     }
 
     .desayunos {
         width: 25%;
+        margin-top: 32px;
     }
 
     .carta {
-        width: 75%;
+        width: 60%;
+
     }
 
 
+    .container .carta>div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 15px;
 
+        & figure {
+            width: 25%;
+        }
+
+        & div {
+            width: calc(75% - 15px);
+        }
+    }
 
 }
+
 
 /* fin mequeries */
