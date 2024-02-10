@@ -412,11 +412,6 @@ section.todaymenu {
 /*inicio retaurantes*/
 
 
-.section.ourblog {
-
-    background-color: white;
-}
-
 .container {
     max-width: var(--anchomaximo);
 }
@@ -424,9 +419,9 @@ section.todaymenu {
 
 .container .restaurantes {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.75rem;
-    margin-top: 1.25rem;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, 2fr);
+    margin-top: 1.875rem;
 
     & h3 {
         font-size: 1.375rem;
@@ -445,25 +440,38 @@ section.todaymenu {
 
         color: var(--colorprincipal);
         font-weight: 700;
+        color: white;
+        margin-top: 0.625rem;
     }
 
     & p {
         line-height: 1.45;
         margin: 0.625rem 0rem 0.625rem 0rem;
-
     }
 
-    & .item1 figure img {
+    & .item1 .texto {
+        margin: 0rem 1rem 0rem 1rem;
+    }
+
+    & .item1 figure {
         position: relative;
     }
 
-    &.item1 div:nth-child(2) {
+    & .item1 .fecha {
         position: absolute;
+        background-color: #fa573ab0;
+        transform: translateY(-160%);
+        border: var(--colorprincipal);
+        padding: 1.15rem;
+
+
+
     }
+
+
+
+
 }
-
-
-
 
 
 
