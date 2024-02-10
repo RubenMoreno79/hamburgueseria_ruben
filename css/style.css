@@ -512,6 +512,16 @@ section.todaymenu {
         }
     }
 
+    .todaymenu div hr {
+        width: 3%;
+    }
+
+    .todaymenu li:first-child {
+        background-color: var(--colorprincipal);
+        margin-top: 0rem;
+        padding: 0rem 0rem 0rem 0.6rem;
+    }
+
 }
 
 
