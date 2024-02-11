@@ -440,7 +440,6 @@ section.todaymenu {
 
         color: var(--colorprincipal);
         font-weight: 700;
-        color: white;
         margin-top: 0.625rem;
     }
 
@@ -460,17 +459,54 @@ section.todaymenu {
     & .item1 .fecha {
         position: absolute;
         background-color: #fa573ab0;
-        transform: translateY(-160%);
+        transform: translateY(-182%);
         border: var(--colorprincipal);
-        padding: 1.15rem;
-
-
-
+        padding: 0.8rem;
     }
 
+    & .item1 .fecha h4 {
+        color: white;
+    }
 
+    & .item2 .texto {
+        margin: 0rem 1rem 0rem 1rem;
+    }
 
+    & .item2 figure {
+        position: relative;
+    }
 
+    & .item2 .fecha {
+        position: absolute;
+        background-color: #fa573ab0;
+        transform: translateY(-182%);
+        border: var(--colorprincipal);
+        padding: 0.8rem;
+    }
+
+    & .item2 .fecha h4 {
+        color: white;
+    }
+
+    & .item3 .texto {
+        margin: 0rem 1rem 0rem 1rem;
+    }
+
+    & .item3 figure {
+        position: relative;
+    }
+
+    & .item3 .fecha {
+        position: absolute;
+        background-color: #fa573ab0;
+        transform: translateY(-182%);
+        border: var(--colorprincipal);
+        padding: 0.8rem;
+    }
+
+    & .item3 .fecha h4 {
+        color: white;
+    }
 }
 
 
