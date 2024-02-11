@@ -509,18 +509,7 @@ section.todaymenu {
     }
 }
 
-
-
-
 /*fin restaurantes*/
-
-
-
-
-
-
-
-
 
 /* fin main*/
 
@@ -612,10 +601,10 @@ section.todaymenu {
     }
 
     .carta {
-        width: 60%;
+        width: 65%;
+        margin-top: 0.62rem;
 
     }
-
 
     .container .carta>div {
         display: flex;
@@ -640,6 +629,26 @@ section.todaymenu {
         background-color: var(--colorprincipal);
         margin-top: 0rem;
         padding: 0rem 0rem 0rem 0.6rem;
+    }
+
+    .container .restaurantes {
+        grid-template-columns: repeat(3, 1fr);
+
+        & h3 {
+            font-size: 1.25rem;
+        }
+
+        & .item3 .fecha {
+            transform: translateY(-297%);
+        }
+
+        & .item2 .fecha {
+            transform: translateY(-297%);
+        }
+
+        & .item1 .fecha {
+            transform: translateY(-297%);
+        }
     }
 
 }
